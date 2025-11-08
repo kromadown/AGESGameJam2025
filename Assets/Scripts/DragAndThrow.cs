@@ -9,10 +9,22 @@ public class DragAndThrow : MonoBehaviour
     private Vector3 mouseVelocity;
     private Rigidbody2D rb;
     public bool hasBeenThrown = false;
+    private LineRenderer line;
+
+    // Boundary (world space)
+    public Vector2 boundaryExtents = new Vector2(2f, 1f);
+
+    // The object (or player) this boundary follows
+    [SerializeField] public Transform boundaryCenter;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        line = GetComponent<LineRenderer>();
+        line.positionCount = 5; // 4 corners + repeat first to close loop
+        line.startColor = Color.green;
+        line.endColor = Color.green;
+
     }
 
     void Update()
@@ -26,8 +38,29 @@ public class DragAndThrow : MonoBehaviour
             mouseVelocity = (currentMouseWorldPos - lastMouseWorldPos) / Time.deltaTime;
             lastMouseWorldPos = currentMouseWorldPos;
 
+            Vector3 targetPos = currentMouseWorldPos + offset;
+
+            Vector3 center = boundaryCenter.position;
+
+            float minX = center.x - boundaryExtents.x;
+            float maxX = center.x + boundaryExtents.x;
+            float minY = center.y - boundaryExtents.y;
+            float maxY = center.y + boundaryExtents.y;
+
+            // Clamp position inside boundary
+            targetPos.x = Mathf.Clamp(targetPos.x, minX, maxX);
+            targetPos.y = Mathf.Clamp(targetPos.y, minY, maxY);
+
             // Move object to follow mouse
-            transform.position = currentMouseWorldPos + offset;
+            rb.MovePosition(targetPos);
+
+            if (line == null) return;
+
+            line.SetPosition(0, new Vector3(minX, minY, 0));
+            line.SetPosition(1, new Vector3(minX, maxY, 0));
+            line.SetPosition(2, new Vector3(maxX, maxY, 0));
+            line.SetPosition(3, new Vector3(maxX, minY, 0));
+            line.SetPosition(4, new Vector3(minX, minY, 0)); // close loop
         }
     }
 

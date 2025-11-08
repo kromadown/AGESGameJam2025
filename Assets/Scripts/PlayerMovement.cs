@@ -35,6 +35,17 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+
+        // Stop upward movement if touching ceiling
+        if (IsTouchingCeiling() && rb.linearVelocityY > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
+        }
+    }
+
+    private bool IsTouchingCeiling()
+    {
+        return Physics2D.OverlapCircle(ceilingCheck.position, 0.2f, ceilingLayer);
     }
 
     private bool IsGrounded()
