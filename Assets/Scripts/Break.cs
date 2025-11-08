@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BreakOnImpact : MonoBehaviour
 {
-    public float breakForce = 5f;
+    public float breakForce = 10f;
 
     private DragAndThrow throwScript;
 

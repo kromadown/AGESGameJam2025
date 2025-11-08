@@ -69,6 +69,21 @@ public class DragAndThrow : MonoBehaviour
         // Convert mouse to world
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
+        // Get clamp bounds
+        Vector3 center = boundaryCenter.position;
+        float minX = center.x - boundaryExtents.x;
+        float maxX = center.x + boundaryExtents.x;
+        float minY = center.y - boundaryExtents.y;
+        float maxY = center.y + boundaryExtents.y;
+
+        // Check if this object is inside allowed area
+        if (transform.position.x < minX || transform.position.x > maxX ||
+            transform.position.y < minY || transform.position.y > maxY)
+        {
+            // It's outside, so do NOT allow dragging
+            return;
+        }
+
         // Always allow grabbing, even while airborne
         dragging = true;
         rb.isKinematic = true; // Stop physics while we hold it
