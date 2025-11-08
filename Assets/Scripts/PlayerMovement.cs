@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 16f;
+    // private float jumpingPower = 16f;
     private bool isFacingRight = true;
     private Animator anim;
 
@@ -20,15 +20,15 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpingPower);
-        }
+        // if (Input.GetButtonDown("Jump") && IsGrounded())
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpingPower);
+        // }
 
-        if (Input.GetButtonUp("Jump") && rb.linearVelocityY > 0f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * 0.5f);
-        }
+        // if (Input.GetButtonUp("Jump") && rb.linearVelocityY > 0f)
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * 0.5f);
+        // }
 
         Flip();
     }
@@ -36,6 +36,17 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+
+        // Stop upward movement if touching ceiling
+        if (IsTouchingCeiling() && rb.linearVelocityY > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
+        }
+    }
+
+    private bool IsTouchingCeiling()
+    {
+        return Physics2D.OverlapCircle(ceilingCheck.position, 0.2f, ceilingLayer);
     }
 
     private bool IsGrounded()
