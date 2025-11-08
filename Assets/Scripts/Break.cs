@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BreakOnImpact : MonoBehaviour
 {
-    public float breakForce = 5f;
+    public float breakForce = 10f;
 
     private DragAndThrow throwScript;
 
@@ -17,7 +17,12 @@ public class BreakOnImpact : MonoBehaviour
         if (throwScript == null || !throwScript.hasBeenThrown)
             return;
 
+        // Don't break if hitting the player
+        if (collision.collider.CompareTag("Player"))
+            return;
+
         float impact = collision.relativeVelocity.magnitude;
+        Debug.Log(impact);
 
         if (impact >= breakForce)
         {
