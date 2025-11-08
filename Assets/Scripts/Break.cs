@@ -17,7 +17,12 @@ public class BreakOnImpact : MonoBehaviour
         if (throwScript == null || !throwScript.hasBeenThrown)
             return;
 
+        // Don't break if hitting the player
+        if (collision.collider.CompareTag("Player"))
+            return;
+
         float impact = collision.relativeVelocity.magnitude;
+        Debug.Log(impact);
 
         if (impact >= breakForce)
         {
