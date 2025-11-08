@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        
 
         if (health <= 0)
         {
