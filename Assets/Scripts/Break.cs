@@ -3,6 +3,7 @@ using UnityEngine;
 public class BreakOnImpact : MonoBehaviour
 {
     public float breakForce = 10f;
+    private string breakerTag = "Breakable Box";
 
     private DragAndThrow throwScript;
 
@@ -14,11 +15,11 @@ public class BreakOnImpact : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Only break if the object has been thrown
-        if (throwScript == null || !throwScript.hasBeenThrown)
-            return;
+        // if (throwScript == null || !throwScript.hasBeenThrown)
+        //     return;
 
         // Don't break if hitting the player
-        if (collision.collider.CompareTag("Player"))
+        if (!collision.collider.CompareTag(breakerTag))
             return;
 
         float impact = collision.relativeVelocity.magnitude;
