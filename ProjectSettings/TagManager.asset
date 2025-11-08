@@ -53,11 +53,11 @@ TagManager:
   - name: lift
     uniqueID: 342840337
     locked: 0
-  - name: circle
-    uniqueID: 3377981775
-    locked: 0
   - name: charactor
     uniqueID: 1192596705
+    locked: 0
+  - name: stuff
+    uniqueID: 3377981775
     locked: 0
   m_RenderingLayers:
   - Default

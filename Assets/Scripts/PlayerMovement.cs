@@ -3,8 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    // private float jumpingPower = 16f;
+    public float speed = 8f;
     private bool isFacingRight = true;
     private Animator anim;
 
@@ -16,19 +15,14 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Update is called once per frame
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-
-        // if (Input.GetButtonDown("Jump") && IsGrounded())
-        // {
-        //     rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpingPower);
-        // }
-
-        // if (Input.GetButtonUp("Jump") && rb.linearVelocityY > 0f)
-        // {
-        //     rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * 0.5f);
-        // }
 
         Flip();
     }
@@ -37,16 +31,14 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
 
-        // Stop upward movement if touching ceiling
-        if (IsTouchingCeiling() && rb.linearVelocityY > 0f)
+        if (horizontal == 0)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, 0f);
+            anim.SetBool("is walking", false);
         }
-    }
-
-    private bool IsTouchingCeiling()
-    {
-        return Physics2D.OverlapCircle(ceilingCheck.position, 0.2f, ceilingLayer);
+        else
+        {
+            anim.SetBool("is walking", true);
+        }
     }
 
     private bool IsGrounded()
@@ -64,6 +56,8 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+    
 
     
 }
