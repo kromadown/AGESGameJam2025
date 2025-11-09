@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 16d97e9b58287f045be17a263519174c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4488290824130578395
+    second: click_and_drag_and_throw_0
+  - first:
+      213: 3875642554541837222
+    second: click_and_drag_and_throw_1
+  - first:
+      213: 6548606200275014578
+    second: click_and_drag_and_throw_2
+  - first:
+      213: 5973151201211832251
+    second: click_and_drag_and_throw_3
+  - first:
+      213: 2310483864360910906
+    second: click_and_drag_and_throw_4
+  - first:
+      213: -2703487150707865412
+    second: click_and_drag_and_throw_5
+  - first:
+      213: -2813045546695334270
+    second: click_and_drag_and_throw_6
+  - first:
+      213: 1017430514218053337
+    second: click_and_drag_and_throw_7
+  - first:
+      213: -4994676660778160396
+    second: click_and_drag_and_throw_8
+  - first:
+      213: -3288493121218195046
+    second: click_and_drag_and_throw_9
+  - first:
+      213: 7546748227700809952
+    second: click_and_drag_and_throw_10
+  - first:
+      213: 1838788138343071125
+    second: click_and_drag_and_throw_11
+  - first:
+      213: -3302001900383288439
+    second: click_and_drag_and_throw_12
+  - first:
+      213: -6567398047401598772
+    second: click_and_drag_and_throw_13
+  - first:
+      213: 97942898810147907
+    second: click_and_drag_and_throw_14
+  - first:
+      213: -6235850000241294109
+    second: click_and_drag_and_throw_15
+  - first:
+      213: -2547504936716877199
+    second: click_and_drag_and_throw_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 148
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7c2fc79bc994e30800000000000000
+      internalID: 4488290824130578395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 137
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab8adb8e5c09c530800000000000000
+      internalID: 3875642554541837222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 168
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b31055a4a251ea50800000000000000
+      internalID: 6548606200275014578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 166
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7dde1de55e4e250800000000000000
+      internalID: 5973151201211832251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 160
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30018a45dc701020800000000000000
+      internalID: 2310483864360910906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 100
+        width: 71
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8893792c84b7ad0800000000000000
+      internalID: -2703487150707865412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 160
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286ea3cbafd06f8d0800000000000000
+      internalID: -2813045546695334270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 155
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de2c9f79a3ae1e00800000000000000
+      internalID: 1017430514218053337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 143
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe226a3a085faab0800000000000000
+      internalID: -4994676660778160396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 130
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91597fedecec52d0800000000000000
+      internalID: -3288493121218195046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_10
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 119
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e06a69578f6bb860800000000000000
+      internalID: 7546748227700809952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_11
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 110
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59df32bc110b48910800000000000000
+      internalID: 1838788138343071125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_12
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 89
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9834dff24ceec22d0800000000000000
+      internalID: -3302001900383288439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 102
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0a80e754aebd4a0800000000000000
+      internalID: -6567398047401598772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 43
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344d9db2c86fb5100800000000000000
+      internalID: 97942898810147907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e48ff6b67fc579a0800000000000000
+      internalID: -6235850000241294109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: click_and_drag_and_throw_16
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 38
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172cf6fd1c175acd0800000000000000
+      internalID: -2547504936716877199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      click_and_drag_and_throw_0: 4488290824130578395
+      click_and_drag_and_throw_1: 3875642554541837222
+      click_and_drag_and_throw_10: 7546748227700809952
+      click_and_drag_and_throw_11: 1838788138343071125
+      click_and_drag_and_throw_12: -3302001900383288439
+      click_and_drag_and_throw_13: -6567398047401598772
+      click_and_drag_and_throw_14: 97942898810147907
+      click_and_drag_and_throw_15: -6235850000241294109
+      click_and_drag_and_throw_16: -2547504936716877199
+      click_and_drag_and_throw_2: 6548606200275014578
+      click_and_drag_and_throw_3: 5973151201211832251
+      click_and_drag_and_throw_4: 2310483864360910906
+      click_and_drag_and_throw_5: -2703487150707865412
+      click_and_drag_and_throw_6: -2813045546695334270
+      click_and_drag_and_throw_7: 1017430514218053337
+      click_and_drag_and_throw_8: -4994676660778160396
+      click_and_drag_and_throw_9: -3288493121218195046
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

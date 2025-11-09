@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 45ce1aebd7cd7b746a759ab64dc279fa
   - enabled: 1
+    path: Assets/Scenes/Carson2.unity
+    guid: e9a782f96432a8043a3dd5d1c4ac1882
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
