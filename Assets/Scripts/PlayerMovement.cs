@@ -6,12 +6,15 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 8f;
     private bool isFacingRight = true;
     private Animator anim;
+    private AudioSource audioSource;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform ceilingCheck;
     [SerializeField] private LayerMask ceilingLayer;
+    [SerializeField] private AudioClip walkingSound;
+
 
 
     // Update is called once per frame
@@ -19,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -38,6 +42,21 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("is walking", true);
+        }
+
+        bool isWalking = horizontal != 0;
+        anim.SetBool("is walking", isWalking);
+
+        //Play/Stop walking sound based on movement state
+        if (isWalking && IsGrounded() && !audioSource.isPlaying)
+        {
+        audioSource.clip = walkingSound;
+        audioSource.loop = true;
+        audioSource.Play();
+        }
+        else if ((!isWalking || !IsGrounded()) && audioSource.isPlaying)
+        {
+        audioSource.Stop();
         }
     }
 

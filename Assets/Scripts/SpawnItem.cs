@@ -8,6 +8,7 @@ public class SpawnItem : MonoBehaviour
     public void SpawnSphere()
     {
         Instantiate(objectToSpawn, transform.position, Quaternion.identity);
+        Debug.Log("Spawned Sphere");
 
         DragAndThrow drag = objectToSpawn.GetComponent<DragAndThrow>();
         if (drag != null)

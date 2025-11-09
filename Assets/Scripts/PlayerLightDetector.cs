@@ -11,7 +11,7 @@ public class PlayerLightDetector : MonoBehaviour
     {
         if (other.CompareTag("Light Area"))
             isLit = true;
-            Debug.Log("Enter");
+            //Debug.Log("Enter");
     }
     
     private void OnTriggerStay2D(Collider2D other)
@@ -27,7 +27,7 @@ public class PlayerLightDetector : MonoBehaviour
     {
         if (other.CompareTag("Light Area"))
             isLit = false;
-            Debug.Log("Exit");
+            //Debug.Log("Exit");
     }
 }
 
