@@ -12,6 +12,7 @@ public class ElevatorEnergy : MonoBehaviour
 
     private bool elevatorActive = false;
     private Vector3 targetPosition;
+    public GameController gameController;
 
     void Update()
     {
@@ -38,6 +39,12 @@ public class ElevatorEnergy : MonoBehaviour
                 targetPosition,
                 moveSpeed * Time.deltaTime
             );
+
+            if (Vector3.Distance(elevator.position, targetPosition) < 0.01f)
+            {
+                Debug.Log("Elevator reached target position. GAME OVER.");
+                gameController.GameOver(); // <-- Trigger Game Over
+            }
         }
     }
 
