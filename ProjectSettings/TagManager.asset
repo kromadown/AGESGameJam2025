@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Breakable Box
   - Light Area
+  - Battery
+  - Elevator
   layers:
   - Default
   - TransparentFX

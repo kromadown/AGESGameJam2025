@@ -24,7 +24,6 @@ public class DragAndThrow : MonoBehaviour
         line.positionCount = 5; // 4 corners + repeat first to close loop
         line.startColor = Color.green;
         line.endColor = Color.green;
-
     }
 
     void Update()
